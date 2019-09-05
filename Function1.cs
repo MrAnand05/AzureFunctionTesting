@@ -10,7 +10,7 @@ namespace AzureFunctionTest
         [FunctionName("Function1")]
         public static void Run([TimerTrigger("0 */5 * * * *")]TimerInfo myTimer, ILogger log)
         {
-            log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
+            log.LogInformation($"1. C# Timer trigger function executed at: {DateTime.Now}");
         }
     }
 }
